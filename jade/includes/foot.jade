@@ -1,0 +1,51 @@
+-var analyticsCode = "UA-51399179-1"
+-var pathToJs = "bower_components/uikit/js"
+-var pathToJquery = "https://code.jquery.com/jquery-1.12.0.min.js"
+footer
+		script.
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				ga('create', '#{analyticsCode}', 'auto');
+				ga('send', 'pageview');
+		script(src="#{pathToJquery}")
+		script(src="#{pathToJs}/uikit.js")
+		script(src="#{pathToJs}/core/alert.js")
+		script(src="#{pathToJs}/core/button.js")
+		script(src="#{pathToJs}/core/core.js")
+		script(src="#{pathToJs}/core/cover.js")
+		script(src="#{pathToJs}/core/dropdown.js")
+		script(src="#{pathToJs}/core/grid.js")
+		script(src="#{pathToJs}/core/modal.js")
+		script(src="#{pathToJs}/core/nav.js")
+		script(src="#{pathToJs}/core/offcanvas.js")
+		script(src="#{pathToJs}/core/scrollspy.js")
+		script(src="#{pathToJs}/core/smoothscroll.js")
+		script(src="#{pathToJs}/core/switcher.js")
+		script(src="#{pathToJs}/core/tab.js")
+		script(src="#{pathToJs}/core/toggle.js")
+		script(src="#{pathToJs}/core/touch.js")
+		script(src="#{pathToJs}/core/utility.js")
+
+		script(src="#{pathToJs}/components/accordion.js")
+		script(src="#{pathToJs}/components/autocomplete.js")
+		script(src="#{pathToJs}/components/datepicker.js")
+		script(src="#{pathToJs}/components/form-password.js")
+		script(src="#{pathToJs}/components/grid.js")
+		script(src="#{pathToJs}/components/htmleditor.js")
+		script(src="#{pathToJs}/components/lightbox.js")
+		script(src="#{pathToJs}/components/nestable.js")
+		script(src="#{pathToJs}/components/notify.js")
+		script(src="#{pathToJs}/components/pagination.js")
+		script(src="#{pathToJs}/components/parallax.js")
+		script(src="#{pathToJs}/components/search.js")
+		script(src="#{pathToJs}/components/slider.js")
+		script(src="#{pathToJs}/components/slideset.js")
+		script(src="#{pathToJs}/components/slideshow-fx.js")
+		script(src="#{pathToJs}/components/slideshow.js")
+		script(src="#{pathToJs}/components/sortable.js")
+		script(src="#{pathToJs}/components/sticky.js")
+		script(src="#{pathToJs}/components/timepicker.js")
+		script(src="#{pathToJs}/components/tooltip.js")
+		script(src="#{pathToJs}/components/upload.js")

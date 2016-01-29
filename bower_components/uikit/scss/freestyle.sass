@@ -1,2 +1,90 @@
-body
-	background: #313131
+@import 'uikit-mixins'
+
+@import 'uikit-variables'
+// Freestyle Variables
+$dark:						#313131 !default
+
+@import 'uikit'
+// Components
+@import 'core/alert'
+@import 'core/animation'
+@import 'core/article'
+@import 'core/base'
+@import 'core/block'
+@import 'core/button'
+@import 'core/close'
+@import 'core/column'
+@import 'core/comment'
+@import 'core/contrast'
+@import 'core/cover'
+@import 'core/description-list'
+@import 'core/dropdown'
+@import 'core/flex'
+@import 'core/form'
+@import 'core/grid'
+@import 'core/icon'
+@import 'core/list'
+@import 'core/modal'
+@import 'core/nav'
+@import 'core/offcanvas'
+@import 'core/overlay'
+@import 'core/pagination'
+@import 'core/panel'
+@import 'core/print'
+@import 'core/subnav'
+@import 'core/switcher'
+@import 'core/tab'
+@import 'core/table'
+@import 'core/text'
+@import 'core/thumbnail'
+@import 'core/thumbnav'
+@import 'core/utility'
+@import 'core/variables'
+// Components
+@import 'components/accordion'
+@import 'components/autocomplete'
+@import 'components/datepicker'
+@import 'components/dotnav'
+@import 'components/form-advanced'
+@import 'components/form-select'
+@import 'components/htmleditor'
+@import 'components/nestable'
+@import 'components/notify'
+@import 'components/placeholder'
+@import 'components/progress'
+@import 'components/search'
+@import 'components/slidenav'
+@import 'components/slider'
+@import 'components/slideshow'
+@import 'components/sortable'
+@import 'components/sticky'
+@import 'components/tooltip'
+@import 'components/upload'
+
+
+
+// Custom code here
+.logowrap
+	background: brown
+	max-width: 100%
+	.logo
+		background: $dark
+		margin-top: 10px
+.navigation
+	background: pink
+	height: 100px
+	.nav-item-1, .slide-1
+		background: gray
+	.nav-item-2, .slide-2
+		background: black
+	.nav-item-3, .slide-3
+		background: purple
+	.nav-item-4, .slide-4
+		background: green
+	.nav-item-5
+		background: orange
+
+.button
+	height: 100px
+	width: 100px
+	background: blue

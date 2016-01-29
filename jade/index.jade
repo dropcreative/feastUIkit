@@ -1,2 +1,27 @@
 -var title = "Feast Caterers"
-include includes/head
+doctype html
+html
+		include includes/head.jade
+		body
+				.pagewrap
+						.uk-container.logowrap
+								img(src="img/logo.png" alt="Feast Logo" class="logo uk-align-center")
+						.navigation.uk-grid
+								.uk-width-1-5.nav-item-1
+								.uk-width-1-5.nav-item-2
+								.uk-width-1-5.nav-item-3
+								.uk-width-1-5.nav-item-4
+								.uk-width-1-5.nav-item-5
+						div.uk-grid
+								ul.uk-slideshow(data-uk-slideshow='{autoplay:true, kenburns:true}')
+										li
+												img(src='img/image-1.jpg', width='', height='', alt='')
+										li
+												img(src='img/image-2.jpg', width='', height='', alt='')
+										li
+												img(src="img/image-3.jpg", width='', height='', alt='')
+										li
+												img(src="img/image-4.jpg", width='', height='', alt='')
+						div.button
+								a.uk-button(href="img/image-3.jpg" data-uk-lightbox title="")
+		include includes/foot.jade

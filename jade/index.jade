@@ -1,4 +1,5 @@
 -var title = "Feast Caterers"
+include includes/svgvariables.jade
 doctype html
 html
 		include includes/head.jade
@@ -8,20 +9,32 @@ html
 								img(src="img/logo.png" alt="Feast Logo" class="logo uk-align-center")
 						.navigation.uk-grid
 								.uk-width-1-5.nav-item-1
+										i.dish-nav.icon-dish-icon
 								.uk-width-1-5.nav-item-2
+										i.quote-nav.icon-quote-right
 								.uk-width-1-5.nav-item-3
+										i.quote-nav.icon-home
 								.uk-width-1-5.nav-item-4
+										i.quote-nav.icon-help
 								.uk-width-1-5.nav-item-5
+										i.quote-nav.icon-mail
+						ul.uk-slideshow.uk-vertical-align.freeslides(data-uk-slideshow='{autoplay:true, kenburns:true}')
+								li
+										img(src='img/image-1.jpg', width='', height='', alt='')
+								li
+										img(src='img/image-2.jpg', width='', height='', alt='')
+								li
+										img(src="img/image-3.jpg", width='', height='', alt='')
+								li
+										img(src="img/image-4.jpg", width='', height='', alt='')
 						div.uk-grid
-								ul.uk-slideshow(data-uk-slideshow='{autoplay:true, kenburns:true}')
-										li
-												img(src='img/image-1.jpg', width='', height='', alt='')
-										li
-												img(src='img/image-2.jpg', width='', height='', alt='')
-										li
-												img(src="img/image-3.jpg", width='', height='', alt='')
-										li
-												img(src="img/image-4.jpg", width='', height='', alt='')
-						div.button
-								a.uk-button(href="img/image-3.jpg" data-uk-lightbox title="")
+								div.uk-width-small-1-1.uk-width-medium-1-2.black hello black
+										div.uk-panel.uk-panel-box.freepanel
+												i.demo-icon.icon-dish-icon
+								div.uk-width-small-1-1.uk-width-medium-1-2.gray hi gray
+								div.uk-width-small-1-1.black
+										!{quote}
+								div.uk-width-small-1-1.uk-width-medium-1-2.uk-width-1-3.gray hi gray
+								div.uk-width-small-1-1.black
+										!{dish}
 		include includes/foot.jade
